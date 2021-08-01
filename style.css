@@ -1,0 +1,165 @@
+body {
+  font-family: monospace !important;
+  height: 100vh;
+  background: #edf1f3 !important;
+}
+.menu-item {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 10px;
+  width: 180px;
+  justify-content: space-evenly;
+}
+section {
+  margin: 5% 10%;
+  font-size: 20px;
+}
+section > i {
+  font-size: 35px;
+}
+
+.menu-item:hover {
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+h1 {
+  font-size: 5vw !important;
+}
+h2 {
+  margin: 0 !important;
+  font-size: 30px !important;
+  align-self: flex-end !important;
+}
+nav {
+  padding: 10px;
+}
+.nav-holder {
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu-icon {
+  align-self: center;
+  font-size: 30px;
+}
+.menu-title {
+  margin-left: 5px;
+}
+.separator {
+  align-self: center;
+  font-size: 40px;
+  font-weight: 100;
+  color: grey;
+}
+.about > i {
+  color: #0055ff;
+}
+.skills > i {
+  color: #ff4800;
+}
+.projects > i {
+  color: gold;
+}
+.contact > i {
+  color: #2aa6ff;
+}
+.contact:hover > i {
+  animation: fly 1s;
+}
+
+.skills:hover > i {
+  animation: rotating 1s;
+}
+.glow-bulb {
+  display: none;
+}
+.projects:hover > .bulb {
+  display: none;
+}
+.projects:hover > .glow-bulb {
+  display: block;
+}
+.about:hover > i {
+  animation: MoveUpDown 1s;
+}
+
+.about > h1 {
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    position: relative;
+    bottom: 0;
+  }
+  50% {
+    position: relative;
+    bottom: 5px;
+  }
+}
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes fly {
+  50% {
+    transform: translate(5px, -5px);
+  }
+
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.wave::after {
+  content: "✋";
+  --emoji: "👋";
+  animation-name: twoFrames;
+  animation-duration: 1s;
+}
+
+.emoji {
+  min-width: 1.4em;
+  margin: 0.3em 0.4em;
+  text-align: center;
+}
+
+.emoji::after {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes twoFrames {
+  50% {
+    content: var(--emoji);
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-icon {
+    font-size: 50px;
+  }
+  .menu-title {
+    display: none;
+  }
+  .menu-item {
+    margin: 0px;
+    width: 70px;
+  }
+}
+hr {
+  width: 50%;
+  margin: 50px auto !important;
+}
+#title {
+  margin: 50px 0px;
+}
+.sec-title {
+  margin-left: 10px !important;
+}
