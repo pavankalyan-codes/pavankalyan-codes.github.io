@@ -52,56 +52,75 @@
 
   <body>
     <script src="script.js"></script>
-    <header>
-      <nav class="d-flex justify-content-center">
-        <div class="nav-holder">
-          <div class="menu-item d-flex about" href="#about">
-            <i class="fas fa-user-tie menu-icon"></i>
-            <span class="menu-title">About</span>
-          </div>
-          <div class="separator">|</div>
-          <div class="menu-item d-flex skills">
-            <i class="fas fa-atom menu-icon"></i>
-            <span class="menu-title">Skills</span>
-          </div>
-          <div class="separator">|</div>
+    <div class="landing-page">
+      <header>
+        <nav class="d-flex justify-content-center">
+          <div class="nav-holder">
+            <div class="menu-item d-flex about" href="#about">
+              <i class="fas fa-user-tie menu-icon"></i>
+              <span class="menu-title">About</span>
+            </div>
+            <div class="separator">|</div>
+            <div class="menu-item d-flex skills">
+              <i class="fas fa-atom menu-icon"></i>
+              <span class="menu-title">Skills</span>
+            </div>
+            <div class="separator">|</div>
 
-          <div class="menu-item d-flex projects">
-            <i class="fas fa-lightbulb menu-icon glow-bulb"></i>
-            <i class="far fa-lightbulb menu-icon bulb"></i>
-            <span class="menu-title">Projects</span>
-          </div>
-          <div class="separator">|</div>
+            <div class="menu-item d-flex projects">
+              <i class="fas fa-lightbulb menu-icon glow-bulb"></i>
+              <i class="far fa-lightbulb menu-icon bulb"></i>
+              <span class="menu-title">Projects</span>
+            </div>
+            <div class="separator">|</div>
 
-          <div class="menu-item d-flex contact">
-            <i class="fab fa-telegram-plane menu-icon"></i>
-            <span class="menu-title">Contact</span>
+            <div class="menu-item d-flex contact">
+              <i class="fab fa-telegram-plane menu-icon"></i>
+              <span class="menu-title">Contact</span>
+            </div>
           </div>
+        </nav>
+      </header>
+      <section id="title">
+        <h1 class="text-center fw-bold">
+          <span class="emoji wave" role="img" aria-label="hand wave"></span>
+          Hi! I'm Pavan Kalyan C.
+        </h1>
+      </section>
+      <hr />
+      <section id="about">
+        <div class="d-flex">
+          <i class="fas fa-user-tie menu-icon"></i>
+          <h2 class="fw-bold sec-title">Bio</h2>
         </div>
-      </nav>
-    </header>
+        <div class="content mt-3">
+          <p>
+            I am a Front End Engineer who is passionate about creating rich user
+            interfaces and interactive web apps using Javascript. Strong
+            foundations in Data Structures & Algorithms. Working Experience in
+            Angular 2+, NgRx, HTML5, Sass, Bootstrap.
+          </p>
+        </div>
+        <div class="abt-buttons d-flex justify-content-center">
+          <button
+            class="linked-in"
+            onclick="window.open('https://www.linkedin.com/in/pavan-kalyan-c/','_blank')"
+          >
+            <span class="pre-linkedin">Linked</span
+            ><span class="post-linkedin">In</span>
+          </button>
+          <button
+            class="resume"
+            onclick=" window.open('/PavanKalyanC_Resume.pdf','_blank')"
+          >
+            <span>Resume</span>
+            <i class="fas fa-folder"></i>
+          </button>
+        </div>
+      </section>
+      <hr />
+    </div>
 
-    <section id="title">
-      <h1 class="text-center fw-bold">
-        <span class="emoji wave" role="img" aria-label="hand wave"></span>
-        Hi! I'm Pavan Kalyan C.
-      </h1>
-    </section>
-    <hr />
-    <section id="about">
-      <div class="d-flex">
-        <i class="fas fa-user-tie menu-icon"></i>
-        <h2 class="fw-bold sec-title">Bio</h2>
-      </div>
-      <div class="content mt-3">
-        <p>
-          I am a Front End Engineer who is passionate about creating rich user
-          interfaces and interactive web apps using Javascript. Strong
-          foundations in Data Structures & Algorithms. Working Experience in
-          Angular 2+, NgRx, HTML5, Sass, Bootstrap.
-        </p>
-      </div>
-    </section>
     <footer class="text-center">
       <div>All rights reserved @pavankalyan-c</div>
     </footer>
