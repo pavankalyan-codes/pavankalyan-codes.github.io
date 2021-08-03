@@ -3,16 +3,44 @@ const name=document.getElementById("name");
 const email=document.getElementById("email");
 const message=document.getElementById("message");
 function gotoSkills(){
-    const skills=document.getElementById("goto-skills");
-    skills.click();
+    let scrollLocation = document.location.toString().split('#')[0];
+    if(isMobile.any()){
+        setTimeout(function(){
+            document.location = scrollLocation + '#skills';
+        },200)
+    }
+    else{
+        document.location = scrollLocation + '#skills'
+    }
+
+    
 }
 function gotoProjects(){
-    const projects=document.getElementById("goto-projects");
-    projects.click();
+    let scrollLocation = document.location.toString().split('#')[0];
+    if(isMobile.any()){
+        setTimeout(function(){
+            document.location = scrollLocation + '#projects';
+        },200)
+    }
+    else{
+        document.location = scrollLocation + '#projects';
+
+    }
+    
 }
 function gotoContact(){
-    const contact=document.getElementById("goto-contact");
-    contact.click();
+    let scrollLocation = document.location.toString().split('#')[0];
+    if(isMobile.any()){
+        setTimeout(function(){
+            document.location = scrollLocation + '#contact';
+        },500)
+    }
+    else{
+        document.location = scrollLocation + '#contact';
+    }
+
+    
+    
 }
 function notEmpty(data){
     return data!=="";
@@ -59,3 +87,25 @@ function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
 }
+
+
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};

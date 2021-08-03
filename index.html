@@ -57,7 +57,7 @@
       <header>
         <nav class="d-flex justify-content-center">
           <div class="nav-holder">
-            <div class="menu-item d-flex about" href="#about">
+            <div class="menu-item d-flex about" tabindex="0">
               <i class="fas fa-user-tie menu-icon"> </i>
 
               <span class="menu-title">About</span>
@@ -65,24 +65,32 @@
 
             <div class="separator">|</div>
 
-            <div class="menu-item d-flex skills" onclick="gotoSkills()">
-              <a href="#skills" id="goto-skills" class="sr-only"></a>
+            <div
+              class="menu-item d-flex skills"
+              tabindex="0"
+              onclick="gotoSkills()"
+            >
               <i class="fas fa-atom menu-icon"></i>
               <span class="menu-title">Skills</span>
             </div>
             <div class="separator">|</div>
 
-            <div class="menu-item d-flex projects" onclick="gotoProjects()">
-              <a href="#projects" id="goto-projects" class="sr-only"></a>
+            <div
+              class="menu-item d-flex projects"
+              tabindex="0"
+              onclick="gotoProjects()"
+            >
               <i class="fas fa-lightbulb menu-icon glow-bulb"></i>
               <i class="far fa-lightbulb menu-icon bulb"></i>
               <span class="menu-title">Projects</span>
             </div>
             <div class="separator">|</div>
 
-            <div class="menu-item d-flex contact" onclick="gotoContact()">
-              <a href="#contact" id="goto-contact" class="sr-only"></a>
-
+            <div
+              class="menu-item d-flex contact"
+              tabindex="0"
+              onclick="gotoContact()"
+            >
               <i class="fab fa-telegram-plane menu-icon"></i>
               <span class="menu-title">Contact</span>
             </div>
