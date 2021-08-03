@@ -38,8 +38,10 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -51,7 +53,6 @@
   </head>
 
   <body>
-    <script src="script.js"></script>
     <div class="landing-page">
       <header>
         <nav class="d-flex justify-content-center">
@@ -61,20 +62,25 @@
               <span class="menu-title">About</span>
             </div>
             <div class="separator">|</div>
-            <div class="menu-item d-flex skills">
+
+            <div class="menu-item d-flex skills" onclick="gotoSkills()">
+              <a href="#skills" id="goto-skills" class="sr-only"></a>
               <i class="fas fa-atom menu-icon"></i>
               <span class="menu-title">Skills</span>
             </div>
             <div class="separator">|</div>
 
-            <div class="menu-item d-flex projects">
+            <div class="menu-item d-flex projects" onclick="gotoProjects()">
+              <a href="#projects" id="goto-projects" class="sr-only"></a>
               <i class="fas fa-lightbulb menu-icon glow-bulb"></i>
               <i class="far fa-lightbulb menu-icon bulb"></i>
               <span class="menu-title">Projects</span>
             </div>
             <div class="separator">|</div>
 
-            <div class="menu-item d-flex contact">
+            <div class="menu-item d-flex contact" onclick="gotoContact()">
+              <a href="#contact" id="goto-contact" class="sr-only"></a>
+
               <i class="fab fa-telegram-plane menu-icon"></i>
               <span class="menu-title">Contact</span>
             </div>
@@ -120,9 +126,170 @@
       </section>
       <hr />
     </div>
+    <div class="skill-section" id="skills">
+      <section class="skills">
+        <div class="d-flex">
+          <i class="fas fa-atom menu-icon"></i>
+          <h2 class="fw-bold sec-title">Skills</h2>
+        </div>
+        <div class="skill-row d-flex">
+          <div class="skill-container">
+            <i title="HTML5" class="fab fa-html5 skill-icon html"></i>
+            <span class="skill-title">HTML5</span>
+          </div>
+          <div class="skill-container">
+            <i title="HTML5" class="fab fa-sass scss skill-icon sass"></i>
+            <span class="skill-title">Sass</span>
+          </div>
+          <div class="skill-container">
+            <i title="HTML5" class="fab fa-bootstrap bootstrap skill-icon"></i>
+            <span class="skill-title">Bootstrap</span>
+          </div>
+          <div class="skill-container">
+            <i title="Javascript" class="fab fa-js-square skill-icon js"></i>
+            <span class="skill-title">Javascript</span>
+          </div>
+          <div class="skill-container">
+            <i title="Javascript" class="fab fa-angular angular skill-icon"></i>
+            <span class="skill-title">Angular</span>
+          </div>
+          <div class="skill-container">
+            <i title="Javascript" class="fab fa-node-js node skill-icon"></i>
+            <span class="skill-title">Node</span>
+          </div>
+          <div class="skill-container">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+              alt=""
+              class="java"
+            />
+            <span class="skill-title">Java</span>
+          </div>
+          <div class="skill-container">
+            <i title="Javascript" class="fab fa-git-alt git skill-icon"></i>
+            <span class="skill-title">Git</span>
+          </div>
+          <div class="skill-container">
+            <img
+              _ngcontent-cbh-c9=""
+              src="https://image.flaticon.com/icons/png/512/873/873120.png"
+              alt="heroku"
+              class="skill-icon heroku"
+            />
+            <span class="skill-title">Heroku</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <hr />
+    <div class="projects-section" id="projects">
+      <section class="projects">
+        <div class="d-flex">
+          <i class="fas fa-lightbulb menu-icon"></i>
+          <h2 class="fw-bold sec-title">Projects</h2>
+        </div>
+        <div class="projects-col d-flex justify-content-center">
+          <div class="project-container">
+            <a
+              href="https://pavankalyan-codes.github.io/UI-Designs/"
+              target="_blank"
+            >
+              <div class="project-img ui-designs">
+                <i class="fas fa-shapes"></i>
+              </div>
+              <div class="projec-title">Ui Designs</div>
+            </a>
+          </div>
+          <div class="project-container">
+            <a
+              href="https://pavankalyan-codes.github.io/Vanilla-Js-Apps/"
+              target="_blank"
+            >
+              <div class="project-img vanilla-js">
+                <i class="fab fa-sketch"></i>
+              </div>
+              <div class="projec-title">Vanilla Js Web Apps</div>
+            </a>
+          </div>
+          <div class="project-container">
+            <a href="http://ventoutnow.herokuapp.com/" target="_blank">
+              <div class="project-img vent-out d-flex">
+                <i class="fas fa-comment-alt"></i>
+              </div>
+              <div class="projec-title">Vent Out</div>
+            </a>
+          </div>
+          <div class="project-container">
+            <a href="https://kanban-board5.netlify.app/" target="_blank">
+              <div class="project-img kanban d-flex">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <div class="projec-title">Kanban Boards</div>
+            </a>
+          </div>
+          <div class="project-container">
+            <a href="https://countries-re5tapi.netlify.app/" target="_blank">
+              <div class="project-img kanban d-flex">
+                <i class="fas fa-globe-asia globe"></i>
+              </div>
+              <div class="projec-title">REST Countruies</div>
+            </a>
+          </div>
+          <div class="project-container">
+            <a
+              href="https://github.com/pavankalyan-codes/Leetcode-discord-bot"
+              target="_blank"
+            >
+              <div class="project-img kanban d-flex">
+                <i class="fas fa-robot bot"></i>
+              </div>
+              <div class="projec-title">Discord Bot</div>
+            </a>
+          </div>
+          <div class="project-container">
+            <a
+              href="https://github.com/pavankalyan-codes/twitter-quotes-bot"
+              target="_blank"
+            >
+              <div class="project-img twitter d-flex">
+                <i class="fab fa-twitter-square"></i>
+              </div>
+              <div class="projec-title">Twitter Bot</div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <hr />
+    <div class="contact-section" id="contact">
+      <section class="contact">
+        <div class="d-flex">
+          <i class="fab fa-telegram-plane menu-icon"></i>
+          <h2 class="fw-bold sec-title">Contact</h2>
+        </div>
+        <div class="contact-form">
+          <form action="" class="d-flex flex-column" onsubmit="return false">
+            <input type="text" id="name" placeholder="Name" />
+            <input type="email" id="email" placeholder="Email" />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <button type="submit" class="submit-btn" onclick="submitForm()">
+              Submit<i class="fas fa-arrow-right r-arrow"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
 
     <footer class="text-center">
       <div>All rights reserved @pavankalyan-c</div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
