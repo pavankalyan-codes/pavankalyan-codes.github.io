@@ -162,11 +162,17 @@ nav {
     font-size: 50px;
   }
   .menu-title {
-    display: none;
+    font-size: 15px;
+    color: #00000087;
+    margin-top: 5px;
+    margin-left: 0px;
   }
   .menu-item {
-    margin: 0px;
-    width: 70px;
+    margin: 5px;
+    width: 80px;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
   }
 }
 hr {
