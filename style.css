@@ -29,7 +29,6 @@ section > i {
 .menu-item:hover {
   border-radius: 5px;
   background: #ffffff;
-  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
 }
 
 h2 {
@@ -57,16 +56,20 @@ nav {
   font-weight: 100;
   color: grey;
 }
-.about > i {
-  color: #0055ff;
+.about > i,
+#about > div > i {
+  color: #f94144;
 }
-.skills > i {
-  color: #ff4800;
+.skills > i,
+#skills section > div > i {
+  color: #3a3335;
 }
-.projects > i {
-  color: gold;
+.projects > i,
+#projects > section > div > i {
+  color: #ffb703;
 }
-.contact > i {
+.contact > i,
+#contact > section > div > i {
   color: #2aa6ff;
 }
 .contact:hover > i {
