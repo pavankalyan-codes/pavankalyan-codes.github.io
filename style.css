@@ -381,3 +381,14 @@ textarea {
 .pt-10 {
   padding-top: 10px;
 }
+#spinner {
+  height: 150px !important;
+  width: 150px !important;
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 75px);
+  color: rgb(239, 194, 104);
+}
+#portfolio {
+  display: none;
+}

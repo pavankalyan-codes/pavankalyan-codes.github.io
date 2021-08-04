@@ -2,6 +2,14 @@ const apiUrl="https://docs.google.com/forms/d/e/1FAIpQLSep_1ZtcuB_i9LBWuFvliSd6e
 const name=document.getElementById("name");
 const email=document.getElementById("email");
 const message=document.getElementById("message");
+
+document.onreadystatechange = function () {
+    if (document.readyState === "complete") {
+        console.log(document.readyState);
+        document.getElementById("spinner").style.display = "none";
+        document.getElementById("portfolio").style.display = "block";
+    }
+}
 function gotoSkills(){
     let scrollLocation = document.location.toString().split('#')[0];
     if(isMobile.any()){
