@@ -144,7 +144,7 @@ nav {
 
 .emoji::after {
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
 }
 @keyframes twoFrames {
   50% {
