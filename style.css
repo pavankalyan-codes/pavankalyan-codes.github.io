@@ -131,8 +131,8 @@ nav {
 }
 
 .wave::after {
-  content: "✋";
-  --emoji: "👋";
+  content: "👋";
+  --emoji: "✋";
   animation-name: twoFrames;
   animation-duration: 1s;
 }
