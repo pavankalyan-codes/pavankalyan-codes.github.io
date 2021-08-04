@@ -16,6 +16,7 @@ body {
   width: 180px;
   justify-content: space-evenly;
   border: none;
+  background: transparent;
 }
 section {
   margin: 5% 20%;
