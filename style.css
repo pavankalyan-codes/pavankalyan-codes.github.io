@@ -15,8 +15,7 @@ body {
   padding: 10px;
   width: 180px;
   justify-content: space-evenly;
-  color: black !important;
-  underline: none !important;
+  border: none;
 }
 section {
   margin: 5% 20%;
@@ -26,7 +25,8 @@ section > i {
   font-size: 35px;
 }
 
-.menu-item:hover {
+.menu-item:hover,
+.menu-item:focus {
   border-radius: 5px;
   background: #ffffff;
 }
@@ -72,23 +72,28 @@ nav {
 #contact > section > div > i {
   color: #2aa6ff;
 }
-.contact:hover > i {
+.contact:hover > i,
+.contact:focus > i {
   animation: fly 1s;
 }
 
-.skills:hover > i {
+.skills:hover > i,
+.skills:focus > i {
   animation: rotating 1s;
 }
 .glow-bulb {
   display: none;
 }
-.projects:hover > .bulb {
+.projects:hover > .bulb,
+.projects:focus > .bulb {
   display: none;
 }
-.projects:hover > .glow-bulb {
+.projects:hover > .glow-bulb,
+.projects:focus > .glow-bulb {
   display: block;
 }
-.about:hover > i {
+.about:hover > i,
+.about:focus > i {
   animation: MoveUpDown 1s;
 }
 
@@ -371,4 +376,7 @@ textarea {
 }
 .fs-30 {
   font-size: 30px !important;
+}
+.pt-10 {
+  padding-top: 10px;
 }
