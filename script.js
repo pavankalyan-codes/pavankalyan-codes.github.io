@@ -3,11 +3,26 @@ const name=document.getElementById("name");
 const email=document.getElementById("email");
 const message=document.getElementById("message");
 
+const container = document.querySelector('#container')
+const icons = document.querySelector('#icons')
+var darkMode=localStorage.getItem('darkMode');
 document.onreadystatechange = function () {
     if (document.readyState === "complete") {
-        console.log(document.readyState);
-        document.getElementById("spinner").style.display = "none";
-        document.getElementById("portfolio").style.display = "block";
+            document.getElementById("spinner").style.display = "none";
+            let moon=document.getElementById("icons");
+            moon.style.display = "block";
+            document.getElementById("portfolio").style.display = "flex";
+            document.getElementById("portfolio").style.flexDirection = "column";
+            console.log(darkMode);
+            if(darkMode==="true"){
+                document.body.classList.toggle('dark_mode');
+                const rotation = parseInt(getComputedStyle(icons).getPropertyValue('--rotation'))
+                icons.style.setProperty('--rotation', rotation - 180)
+
+            }
+            else{
+                
+            }
     }
 }
 function gotoSkills(){
@@ -117,3 +132,13 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
+
+function toggleTheme(){
+    console.log("called");
+    document.body.classList.toggle('dark_mode');
+	const rotation = parseInt(getComputedStyle(icons).getPropertyValue('--rotation'))
+	icons.style.setProperty('--rotation', rotation - 180)
+    darkMode=darkMode==="true"?"false":"true";
+    localStorage.setItem("darkMode",darkMode);
+}
+

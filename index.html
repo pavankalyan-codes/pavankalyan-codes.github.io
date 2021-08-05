@@ -53,6 +53,16 @@
   </head>
 
   <body>
+    <div class="icon-container">
+      <button id="icons" onclick="toggleTheme()" class="theme icons hide">
+        <div id="icon1" class="icon icon1">
+          <i class="fas fa-sun sun"></i>
+        </div>
+        <div id="icon2" class="icon icon2">
+          <i class="fas fa-moon moon"></i>
+        </div>
+      </button>
+    </div>
     <div
       class="spinner-grow"
       id="spinner"
@@ -61,7 +71,7 @@
     >
       <span class="sr-only">Loading...</span>
     </div>
-    <div class="" id="portfolio">
+    <div class="hide" id="portfolio">
       <div class="landing-page">
         <header>
           <nav class="d-flex justify-content-center">

@@ -1,10 +1,33 @@
+:root {
+  --body-bg: #edf1f3;
+  --card-bg: #e0e0e0;
+  --card-bd-col: #bdbdbd;
+  --text-color: #252525;
+  --hover-color: white;
+  --submit-btn-bg: black;
+  --submit-btn-color: white;
+}
+.dark_mode {
+  --body-bg: #252525;
+  --card-bg: #555;
+  --card-bd-col: #212121;
+  --text-color: #f5f5f5;
+  --submit-btn-bg: white;
+  --submit-btn-color: black;
+}
+.hide {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
 body {
   font-family: "Nunito", sans-serif !important;
   height: 100vh;
-  background: #edf1f3 !important;
+  background: var(--body-bg) !important;
+  color: var(--text-color) !important;
+  overflow-x: hidden;
 }
 .menu-item {
   font-size: 30px;
@@ -17,6 +40,7 @@ body {
   justify-content: space-evenly;
   border: none;
   background: transparent;
+  color: var(--text-color);
 }
 section {
   margin: 5% 20%;
@@ -27,9 +51,11 @@ section > i {
 }
 
 .menu-item:hover,
-.menu-item:focus {
+.menu-item:focus,
+.menu-item:active {
   border-radius: 5px;
-  background: #ffffff;
+  background: var(--submit-btn-bg) !important;
+  color: var(--submit-btn-color) !important;
 }
 
 h2 {
@@ -38,7 +64,7 @@ h2 {
   align-self: flex-end !important;
 }
 nav {
-  padding: 10px;
+  padding: 30px 25px 25px 25px;
 }
 .nav-holder {
   display: flex;
@@ -57,13 +83,16 @@ nav {
   font-weight: 100;
   color: grey;
 }
+#about {
+  margin: 1% 20%;
+}
 .about > i,
 #about > div > i {
   color: #f94144;
 }
 .skills > i,
 #skills section > div > i {
-  color: #3a3335;
+  color: #1fb362;
 }
 .projects > i,
 #projects > section > div > i {
@@ -153,6 +182,12 @@ nav {
   }
 }
 @media (max-width: 500px) {
+  nav {
+    margin-top: 20px;
+  }
+  #icons {
+    font-size: 13px;
+  }
   .project-container {
     font-size: 20px !important;
   }
@@ -160,6 +195,9 @@ nav {
     margin: 5%;
     text-align: center;
     font-size: 20px;
+  }
+  #about {
+    margin: 5%;
   }
   .abt-buttons > button {
     font-size: 25px;
@@ -172,7 +210,6 @@ nav {
   }
   .menu-title {
     font-size: 15px;
-    color: #00000087;
     margin-top: 5px;
     margin-left: 0px;
   }
@@ -186,10 +223,10 @@ nav {
 }
 hr {
   width: 50%;
-  margin: 50px auto !important;
+  align-self: center;
 }
 #title {
-  margin: 50px 0px;
+  margin: 1%;
 }
 .sec-title {
   margin-left: 10px !important;
@@ -223,6 +260,9 @@ hr {
   margin-left: 5px;
 }
 .landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .abt-buttons > button {
   margin: 5% 10%;
@@ -248,7 +288,8 @@ hr {
 }
 .skill-container:hover,
 .project-container:hover {
-  background-color: white;
+  background-color: var(--hover-color);
+  color: var(--body-bg);
   cursor: pointer;
   border-radius: 5px;
 }
@@ -363,8 +404,8 @@ textarea {
 }
 .submit-btn {
   border: none;
-  background: black;
-  color: white;
+  background: var(--submit-btn-bg);
+  color: var(--submit-btn-color);
   padding: 10px;
   border-radius: 5px;
   font-size: 25px;
@@ -389,6 +430,51 @@ textarea {
   left: calc(50% - 75px);
   color: rgb(239, 194, 104);
 }
-#portfolio {
-  display: none;
+
+.theme {
+  border: none;
+  background: transparent;
+  font-size: 30px;
+}
+.moon {
+  color: black;
+}
+.sun {
+  color: gold;
+}
+
+.icon-container {
+  position: fixed;
+  right: 2%;
+  top: 2%;
+  width: 50px;
+  z-index: 888;
+}
+.icons {
+  --rotation: 0;
+  position: absolute;
+  left: calc(50% - 20px);
+  top: -159px;
+  margin: auto;
+  transition: 1.2s;
+  text-align: center;
+  transform: rotate(calc(var(--rotation) * 1deg));
+  font-size: 15px;
+  right: -12px;
+}
+.icon {
+  font-size: 2em;
+  padding-top: 60px;
+  color: hsl(50, 85%, 55%);
+  transition: color 1.2s;
+}
+.dark .icon {
+  color: #ccc;
+}
+.icon1 {
+  transform: rotate(180deg);
+}
+
+.btn-container {
+  text-align: center;
 }
