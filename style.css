@@ -448,25 +448,27 @@ textarea {
 .icon-container {
   position: fixed;
   right: 2%;
-  top: 2%;
+  top: -120px;
   width: 50px;
   z-index: 888;
+}
+.makeSwing {
+  animation: swing 1s 1;
 }
 .icons {
   --rotation: 0;
   position: absolute;
   left: calc(50% - 20px);
-  top: -159px;
   margin: auto;
   transition: 0.8s;
   text-align: center;
   transform: rotate(calc(var(--rotation) * 1deg));
   font-size: 15px;
-  right: -12px;
+  right: 0px;
+  height: 200px;
 }
 .icon {
   font-size: 2em;
-  padding-top: 60px;
   color: hsl(50, 85%, 55%);
   transition: color 0.8s;
 }
@@ -475,8 +477,35 @@ textarea {
 }
 .icon1 {
   transform: rotate(180deg);
+  margin-bottom: -6px;
 }
 
 .btn-container {
   text-align: center;
+}
+.thread {
+  background: #fd7e14;
+  height: 80px;
+  width: 2px;
+  margin: auto;
+}
+.icon2 {
+  margin-top: -6px;
+}
+@keyframes swing {
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

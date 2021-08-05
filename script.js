@@ -136,8 +136,9 @@ var isMobile = {
 function toggleTheme(){
 
     document.body.classList.toggle('dark_mode');
-	const rotation = parseInt(getComputedStyle(icons).getPropertyValue('--rotation'))
-	icons.style.setProperty('--rotation', rotation - 180)
+	let rotation = parseInt(getComputedStyle(icons).getPropertyValue('--rotation'))
+    icons.style.setProperty('--rotation', rotation - 180)
+   
     darkMode=darkMode==="true"?"false":"true";
     localStorage.setItem("darkMode",darkMode);
 }
