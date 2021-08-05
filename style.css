@@ -288,7 +288,7 @@ hr {
 }
 .skill-container:hover,
 .project-container:hover {
-  background-color: var(--hover-color);
+  background-color: var(--text-color);
   color: var(--body-bg);
   cursor: pointer;
   border-radius: 5px;
@@ -457,7 +457,7 @@ textarea {
   left: calc(50% - 20px);
   top: -159px;
   margin: auto;
-  transition: 1.2s;
+  transition: 0.8s;
   text-align: center;
   transform: rotate(calc(var(--rotation) * 1deg));
   font-size: 15px;
@@ -467,7 +467,7 @@ textarea {
   font-size: 2em;
   padding-top: 60px;
   color: hsl(50, 85%, 55%);
-  transition: color 1.2s;
+  transition: color 0.8s;
 }
 .dark .icon {
   color: #ccc;
