@@ -466,6 +466,7 @@ textarea {
   font-size: 15px;
   right: 0px;
   height: 200px;
+  outline: none;
 }
 .icon {
   font-size: 2em;
