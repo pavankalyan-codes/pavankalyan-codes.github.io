@@ -285,6 +285,7 @@ hr {
   justify-content: space-evenly;
   margin: 10px;
   align-items: center;
+  padding: 5px 10px;
 }
 .skill-container:hover,
 .project-container:hover {
