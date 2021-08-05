@@ -13,7 +13,7 @@ document.onreadystatechange = function () {
             moon.style.display = "block";
             document.getElementById("portfolio").style.display = "flex";
             document.getElementById("portfolio").style.flexDirection = "column";
-            console.log(darkMode);
+
             if(darkMode==="true"){
                 document.body.classList.toggle('dark_mode');
                 const rotation = parseInt(getComputedStyle(icons).getPropertyValue('--rotation'))
@@ -69,7 +69,7 @@ function notEmpty(data){
     return data!=="";
 }
 function submitForm(){
-    console.log("submitting form!");
+
     let userName=name.value.trim();
     let userEmail=email.value.trim();
     let userMessage=message.value.trim();
@@ -100,7 +100,7 @@ function submitForm(){
         })
     }
     else{
-        console.log("Invalid form");
+
         alert("Please enter all the deatils before submitting");
     }
 
@@ -134,7 +134,7 @@ var isMobile = {
 };
 
 function toggleTheme(){
-    console.log("called");
+
     document.body.classList.toggle('dark_mode');
 	const rotation = parseInt(getComputedStyle(icons).getPropertyValue('--rotation'))
 	icons.style.setProperty('--rotation', rotation - 180)
