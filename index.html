@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pavan Kalyan Chelama — Full-Stack Engineer</title>
+  <title>Pavan Kalyan Chelama - Full-Stack Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Lato:wght@300;400&display=swap" rel="stylesheet"/>
@@ -55,7 +55,7 @@
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--cyan); }
 
-    /* ─── NAV ─── */
+    /* --- NAV --- */
     nav {
       position: fixed; top: 0; left: 0; right: 0;
       z-index: 900;
@@ -100,7 +100,7 @@
       50% { opacity: 0.7; box-shadow: 0 0 0 5px rgba(34,197,94,0); }
     }
 
-    /* ─── HERO ─── */
+    /* --- HERO --- */
     #hero {
       min-height: 100vh;
       display: grid;
@@ -256,10 +256,10 @@
     .glow-1 { width: 400px; height: 400px; background: rgba(0,229,200,0.06); top: 10%; right: -100px; }
     .glow-2 { width: 300px; height: 300px; background: rgba(74,158,255,0.05); bottom: 5%; left: 10%; }
 
-    /* ─── DIVIDER ─── */
+    /* --- DIVIDER --- */
     .divider { width: 100%; height: 1px; background: var(--border); position: relative; z-index: 1; }
 
-    /* ─── SECTIONS ─── */
+    /* --- SECTIONS --- */
     .section-wrap {
       max-width: 1140px;
       margin: 0 auto;
@@ -286,7 +286,7 @@
       margin-bottom: 3rem;
     }
 
-    /* ─── EXPERIENCE ─── */
+    /* --- EXPERIENCE --- */
     .exp-item {
       display: grid;
       grid-template-columns: 180px 1fr;
@@ -347,7 +347,7 @@
     }
     .tag:hover { border-color: var(--cyan); color: var(--cyan); }
 
-    /* ─── SKILLS ─── */
+    /* --- SKILLS --- */
     .skills-bg { background: var(--bg2); }
 
     .skills-categories { display: flex; flex-direction: column; gap: 2.5rem; }
@@ -384,7 +384,7 @@
     .chip span { position: relative; z-index: 1; }
     .chip.hot { border-color: rgba(0,229,200,0.35); color: var(--cyan); background: rgba(0,229,200,0.06); }
 
-    /* ─── CERTS ─── */
+    /* --- CERTS --- */
     .certs-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -426,7 +426,7 @@
     .cert-date { font-family: var(--font-mono); font-size: 0.62rem; color: var(--muted); letter-spacing: 0.06em; }
     .cert-id   { font-family: var(--font-mono); font-size: 0.58rem; color: var(--faint); letter-spacing: 0.04em; margin-top: 0.3rem; }
 
-    /* ─── PROJECTS ─── */
+    /* --- PROJECTS --- */
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -455,11 +455,35 @@
     .proj-title { font-family: var(--font-h); font-size: 1.1rem; font-weight: 700; color: var(--text); position: relative; z-index: 1; }
     .proj-desc { font-size: 0.84rem; color: var(--muted); line-height: 1.7; position: relative; z-index: 1; flex: 1; }
     .proj-footer { display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 1; }
-    .proj-link { font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cyan); display: flex; align-items: center; gap: 0.4rem; }
+    .proj-actions { display: flex; align-items: center; gap: 0.55rem; }
+    .proj-link {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      text-decoration: none;
+    }
+    .proj-gh {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.4rem;
+      height: 1.4rem;
+      border: 1px solid var(--border2);
+      color: var(--muted);
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+    .proj-gh svg { width: 0.8rem; height: 0.8rem; fill: currentColor; }
+    .proj-gh:hover { color: var(--cyan); border-color: var(--cyan); transform: translateY(-1px); }
     .proj-arrow { transition: transform 0.2s; }
     .proj-card:hover .proj-arrow { transform: translate(3px, -3px); }
 
-    /* ─── EDUCATION ─── */
+    /* --- EDUCATION --- */
     .edu-list { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 3rem; }
     .edu-card {
       background: var(--surface);
@@ -477,7 +501,7 @@
     .edu-meta { text-align: right; font-family: var(--font-mono); font-size: 0.65rem; color: var(--muted); white-space: nowrap; line-height: 1.9; }
     .edu-grade { color: var(--cyan); font-size: 0.85rem; font-weight: 500; }
 
-    /* ─── CONTACT ─── */
+    /* --- CONTACT --- */
     .contact-bg { background: var(--bg2); }
     .contact-wrap {
       display: grid;
@@ -543,7 +567,7 @@
     .f-submit:hover { background: #33edd6; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,229,200,0.2); }
     .f-submit.sent { background: #22c55e; color: #fff; }
 
-    /* ─── FOOTER ─── */
+    /* --- FOOTER --- */
     footer {
       position: relative; z-index: 1;
       padding: 1.8rem 3rem;
@@ -554,14 +578,14 @@
     .footer-r { font-family: var(--font-mono); font-size: 0.62rem; color: var(--border2); }
     .footer-r span { color: var(--cyan); }
 
-    /* ─── ANIMATIONS ─── */
+    /* --- ANIMATIONS --- */
     @keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
     @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
     .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
     .reveal.in { opacity: 1; transform: translateY(0); }
 
-    /* ─── RESPONSIVE ─── */
+    /* --- RESPONSIVE --- */
     @media (max-width: 900px) {
       #hero { grid-template-columns: 1fr; padding-top: 6rem; }
       .hero-terminal { display: none; }
@@ -604,7 +628,7 @@
       <span class="line2">Chelama.</span>
     </h1>
     <p class="hero-bio">
-      Senior engineer with <strong style="color:var(--text)">5+ years</strong> building cloud-native enterprise systems on <strong style="color:var(--text)">.NET Core, Angular &amp; Azure</strong>. From event-driven microservices and gRPC services to RAG-based AI integrations — I architect systems that scale and run reliably in production.
+      Senior engineer with <strong style="color:var(--text)">5+ years</strong> building cloud-native enterprise systems on <strong style="color:var(--text)">.NET Core, Angular &amp; Azure</strong>. From event-driven microservices and gRPC services to RAG-based AI integrations - I architect systems that scale and run reliably in production.
     </p>
     <div class="hero-actions">
       <a href="https://www.linkedin.com/in/pavan-kalyan-c/" target="_blank" class="btn-cyan">
@@ -612,7 +636,13 @@
         <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
       </a>
       <a href="https://pavankalyan-codes.github.io/PavanKalyanC_Resume.pdf" target="_blank" class="btn-outline">
-        Résumé ↓
+        Resume
+        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M7 1H3.5C3.22 1 3 1.22 3 1.5V10.5C3 10.78 3.22 11 3.5 11H8.5C8.78 11 9 10.78 9 10.5V3L7 1Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+          <path d="M7 1V3H9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 5.2V8.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          <path d="M4.9 7.1L6 8.2L7.1 7.1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </a>
     </div>
   </div>
@@ -622,15 +652,15 @@
       <div class="t-dot r"></div>
       <div class="t-dot y"></div>
       <div class="t-dot g"></div>
-      <span class="terminal-title">pavan@tcs ~ profile.json</span>
+      <span class="terminal-title">pk@chelama ~ profile.json</span>
     </div>
     <div class="terminal-body" id="termBody">
-      <div><span class="t-prompt">❯ </span><span class="t-cmd">cat profile.json</span></div>
+      <div><span class="t-prompt">> </span><span class="t-cmd">cat profile.json</span></div>
       <div>&nbsp;</div>
       <div><span class="t-comment">{</span></div>
       <div>&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-str">"Information Technology Analyst"</span>,</div>
       <div>&nbsp;&nbsp;<span class="t-key">"company"</span>: <span class="t-str">"Tata Consultancy Services"</span>,</div>
-      <div>&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-str">"Frederick, Maryland 🇺🇸"</span>,</div>
+      <div>&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-str">"Frederick, Maryland ðŸ‡ºðŸ‡¸"</span>,</div>
       <div>&nbsp;&nbsp;<span class="t-key">"experience"</span>: <span class="t-val">"5+ years"</span>,</div>
       <div>&nbsp;&nbsp;<span class="t-key">"stack"</span>: [</div>
       <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">".NET Core"</span>, <span class="t-str">"Angular"</span>,</div>
@@ -641,7 +671,7 @@
       <div>&nbsp;&nbsp;<span class="t-key">"open_to_work"</span>: <span class="t-val" style="color:#22c55e">true</span></div>
       <div><span class="t-comment">}</span></div>
       <div>&nbsp;</div>
-      <div id="termCursorLine"><span class="t-prompt">❯ </span><span class="t-cursor"></span></div>
+      <div id="termCursorLine"><span class="t-prompt">> </span><span class="t-cursor"></span></div>
     </div>
   </div>
 </div>
@@ -656,7 +686,7 @@
 
     <div class="exp-item reveal">
       <div class="exp-date">
-        <strong>Aug 2025 — Present</strong>
+        <strong>Aug 2025 - Present</strong>
         Frederick, MD<br/>On-site
       </div>
       <div>
@@ -671,13 +701,13 @@
 
     <div class="exp-item reveal">
       <div class="exp-date">
-        <strong>Apr 2023 — Jul 2025</strong>
+        <strong>Apr 2023 - Jul 2025</strong>
         Redhill, UK<br/>On-site
       </div>
       <div>
         <div class="exp-role">System Engineer</div>
         <div class="exp-company">Tata Consultancy Services</div>
-        <p class="exp-desc">Built scalable backend services in .NET Core — REST APIs, background job processors, and event-driven workflows via Azure Functions and Service Bus. Implemented OAuth/JWT authentication and contributed to Angular frontends. Worked with Azure SQL and Cosmos DB for structured and document-based data needs.</p>
+        <p class="exp-desc">Built scalable backend services in .NET Core - REST APIs, background job processors, and event-driven workflows via Azure Functions and Service Bus. Implemented OAuth/JWT authentication and contributed to Angular frontends. Worked with Azure SQL and Cosmos DB for structured and document-based data needs.</p>
         <div class="exp-tags">
           <span class="tag">.NET Core</span><span class="tag">Azure Functions</span><span class="tag">Cosmos DB</span><span class="tag">OAuth/JWT</span><span class="tag">Angular</span><span class="tag">EF Core</span><span class="tag">MSSQL</span>
         </div>
@@ -686,7 +716,7 @@
 
     <div class="exp-item reveal">
       <div class="exp-date">
-        <strong>Sep 2020 — Mar 2023</strong>
+        <strong>Sep 2020 - Mar 2023</strong>
         Bengaluru, India<br/>Remote
       </div>
       <div>
@@ -701,7 +731,7 @@
 
     <div class="exp-item reveal">
       <div class="exp-date">
-        <strong>Dec 2018 — May 2019</strong>
+        <strong>Dec 2018 - May 2019</strong>
         Hyderabad, T-Hub<br/>Internship
       </div>
       <div>
@@ -713,7 +743,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>
 
@@ -830,7 +859,7 @@
       </div>
       <div class="cert-card reveal" style="border-color:var(--border2);background:rgba(74,158,255,0.04);">
         <div class="cert-issuer" style="color:var(--cyan)">LinkedIn Skill Assessments</div>
-        <div class="cert-name">Angular · C# · JavaScript · HTML · CSS · Python + more</div>
+        <div class="cert-name">Angular - C# - JavaScript - HTML - CSS - Python + more</div>
         <div class="cert-date">Multiple assessments passed</div>
         <div class="cert-id">15 total certifications on profile</div>
       </div>
@@ -847,65 +876,80 @@
     <h2 class="sec-title reveal">Things I've built.</h2>
     <div class="projects-grid">
 
-      <a href="https://pavankalyan-codes.github.io/UI-Designs/" target="_blank" class="proj-card reveal">
+      <div class="proj-card reveal">
         <div class="proj-num">// 01</div>
         <div class="proj-title">UI Designs</div>
-        <p class="proj-desc">Creative UI experiments in HTML5/CSS3 — built while mastering frontend fundamentals and pushing CSS to its limits.</p>
+        <p class="proj-desc">Creative UI experiments in HTML5/CSS3 built while mastering frontend fundamentals and pushing CSS to its limits.</p>
         <div class="proj-footer">
-          <span class="proj-link">View Project <svg class="proj-arrow" width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <div class="proj-actions">
+            <a href="https://pavankalyan-codes.github.io/UI-Designs/" target="_blank" rel="noopener noreferrer" class="proj-link">View Project <svg class="proj-arrow" width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+            <a href="https://github.com/pavankalyan-codes/UI-Designs" target="_blank" rel="noopener noreferrer" class="proj-gh" aria-label="UI Designs GitHub Repository">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38l-.01-1.33c-2.23.48-2.7-.95-2.7-.95-.36-.92-.9-1.16-.9-1.16-.74-.5.06-.49.06-.49.82.06 1.25.84 1.25.84.73 1.25 1.92.89 2.39.68.07-.53.29-.89.52-1.1-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82A7.7 7.7 0 0 1 8 3.8c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.19c0 .21.14.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            </a>
+          </div>
           <span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--muted)">HTML · CSS</span>
         </div>
-      </a>
+      </div>
 
-      <a href="https://pavankalyan-codes.github.io/Vanilla-Js-Apps/" target="_blank" class="proj-card reveal">
+      <div class="proj-card reveal">
         <div class="proj-num">// 02</div>
         <div class="proj-title">Vanilla JS Apps</div>
-        <p class="proj-desc">Web apps built with pure HTML5, CSS3, and JavaScript. No frameworks, no dependencies — JS fundamentals at full display.</p>
+        <p class="proj-desc">Web apps built with pure HTML5, CSS3, and JavaScript. No frameworks, no dependencies, JS fundamentals at full display.</p>
         <div class="proj-footer">
-          <span class="proj-link">View Project <svg class="proj-arrow" width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <div class="proj-actions">
+            <a href="https://pavankalyan-codes.github.io/Vanilla-Js-Apps/" target="_blank" rel="noopener noreferrer" class="proj-link">View Project <svg class="proj-arrow" width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+            <a href="https://github.com/pavankalyan-codes/Vanilla-Js-Apps" target="_blank" rel="noopener noreferrer" class="proj-gh" aria-label="Vanilla JS Apps GitHub Repository">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38l-.01-1.33c-2.23.48-2.7-.95-2.7-.95-.36-.92-.9-1.16-.9-1.16-.74-.5.06-.49.06-.49.82.06 1.25.84 1.25.84.73 1.25 1.92.89 2.39.68.07-.53.29-.89.52-1.1-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82A7.7 7.7 0 0 1 8 3.8c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.19c0 .21.14.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            </a>
+          </div>
           <span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--muted)">JS · HTML · CSS</span>
         </div>
-      </a>
+      </div>
 
-      <a href="http://ventoutnow.herokuapp.com/" target="_blank" class="proj-card reveal">
+      <div class="proj-card reveal">
         <div class="proj-num">// 03</div>
-        <div class="proj-title">Vent Out</div>
-        <p class="proj-desc">Anonymous real-time venting platform. Full-stack Node.js with live interactions and a clean, distraction-free interface.</p>
+        <div class="proj-title">fair-share</div>
+        <p class="proj-desc">Expense-sharing web app for splitting bills fairly and tracking balances.</p>
         <div class="proj-footer">
-          <span class="proj-link">View Project <svg class="proj-arrow" width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-          <span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--muted)">Node.js</span>
+          <div class="proj-actions">
+            <a href="https://pavankalyan-codes.github.io/fair-share/" target="_blank" rel="noopener noreferrer" class="proj-link">View Project <svg class="proj-arrow" width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+            <a href="https://github.com/pavankalyan-codes/fair-share" target="_blank" rel="noopener noreferrer" class="proj-gh" aria-label="fair-share GitHub Repository">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38l-.01-1.33c-2.23.48-2.7-.95-2.7-.95-.36-.92-.9-1.16-.9-1.16-.74-.5.06-.49.06-.49.82.06 1.25.84 1.25.84.73 1.25 1.92.89 2.39.68.07-.53.29-.89.52-1.1-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82A7.7 7.7 0 0 1 8 3.8c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.19c0 .21.14.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            </a>
+          </div>
+          <span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--muted)">HTML · CSS · JS</span>
         </div>
-      </a>
+      </div>
 
-      <a href="https://kanban-board5.netlify.app/" target="_blank" class="proj-card reveal">
+      <div class="proj-card reveal">
         <div class="proj-num">// 04</div>
         <div class="proj-title">Kanban Board</div>
-        <p class="proj-desc">Drag-and-drop task manager with persistent state and smooth UX. Zero external dependencies — pure browser APIs.</p>
+        <p class="proj-desc">Drag-and-drop task manager with persistent state and smooth UX. Zero external dependencies, pure browser APIs.</p>
         <div class="proj-footer">
-          <span class="proj-link">View Project <svg class="proj-arrow" width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <div class="proj-actions">
+            <a href="https://kanban-board5.netlify.app/" target="_blank" rel="noopener noreferrer" class="proj-link">View Project <svg class="proj-arrow" width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+            <a href="https://github.com/pavankalyan-codes/kanban-board" target="_blank" rel="noopener noreferrer" class="proj-gh" aria-label="Kanban Board GitHub Repository">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38l-.01-1.33c-2.23.48-2.7-.95-2.7-.95-.36-.92-.9-1.16-.9-1.16-.74-.5.06-.49.06-.49.82.06 1.25.84 1.25.84.73 1.25 1.92.89 2.39.68.07-.53.29-.89.52-1.1-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82A7.7 7.7 0 0 1 8 3.8c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.19c0 .21.14.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            </a>
+          </div>
           <span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--muted)">JS · CSS</span>
         </div>
-      </a>
+      </div>
 
-      <a href="https://countries-re5tapi.netlify.app/" target="_blank" class="proj-card reveal">
+      <div class="proj-card reveal">
         <div class="proj-num">// 05</div>
-        <div class="proj-title">REST Countries</div>
-        <p class="proj-desc">Angular app for exploring world countries via REST API — search, filter by region, dark mode. Fully responsive.</p>
-        <div class="proj-footer">
-          <span class="proj-link">View Project <svg class="proj-arrow" width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-          <span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--muted)">Angular</span>
-        </div>
-      </a>
-
-      <a href="https://github.com/pavankalyan-codes/Leetcode-discord-bot" target="_blank" class="proj-card reveal">
-        <div class="proj-num">// 06</div>
         <div class="proj-title">LeetCode Discord Bot</div>
         <p class="proj-desc">Sends daily LeetCode challenges to Discord. Tracks streaks, motivates dev teams. Built with Node.js + Discord API.</p>
         <div class="proj-footer">
-          <span class="proj-link">GitHub <svg class="proj-arrow" width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <div class="proj-actions">
+            <a href="https://github.com/pavankalyan-codes/Leetcode-discord-bot" target="_blank" rel="noopener noreferrer" class="proj-link">View Project <svg class="proj-arrow" width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+            <a href="https://github.com/pavankalyan-codes/Leetcode-discord-bot" target="_blank" rel="noopener noreferrer" class="proj-gh" aria-label="LeetCode Discord Bot GitHub Repository">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38l-.01-1.33c-2.23.48-2.7-.95-2.7-.95-.36-.92-.9-1.16-.9-1.16-.74-.5.06-.49.06-.49.82.06 1.25.84 1.25.84.73 1.25 1.92.89 2.39.68.07-.53.29-.89.52-1.1-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82A7.7 7.7 0 0 1 8 3.8c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.19c0 .21.14.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            </a>
+          </div>
           <span style="font-family:var(--font-mono);font-size:0.6rem;color:var(--muted)">Node · Discord API</span>
         </div>
-      </a>
+      </div>
 
     </div>
   </div>
@@ -923,10 +967,10 @@
         <div>
           <div class="edu-degree">B.Tech, Computer Science</div>
           <div class="edu-uni">Rajiv Gandhi University of Knowledge Technologies, RKValley</div>
-          <p class="edu-desc">Core CS fundamentals — data structures, algorithms, OOP, and system design principles. Participated in hackathons and competitive programming contests, building habits around efficient, well-structured code.</p>
+          <p class="edu-desc">Core CS fundamentals - data structures, algorithms, OOP, and system design principles. Participated in hackathons and competitive programming contests, building habits around efficient, well-structured code.</p>
         </div>
         <div class="edu-meta">
-          2016 – 2020<br/>
+          2016 - 2020<br/>
           <span class="edu-grade">GPA 8.78</span>
         </div>
       </div>
@@ -948,15 +992,15 @@
         <p>Currently open to senior full-stack, cloud-native, or backend-heavy roles. If you're building something ambitious on Azure and .NET, I'd love to hear about it.</p>
         <div class="contact-links">
           <a href="https://www.linkedin.com/in/pavan-kalyan-c/" target="_blank" class="cl-item">
-            <span style="color:var(--cyan)">LI</span> LinkedIn → pavan-kalyan-c
+            <span style="color:var(--cyan)">LI</span> LinkedIn -> pavan-kalyan-c
             <svg class="cl-arrow" width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
           </a>
           <a href="https://github.com/pavankalyan-codes" target="_blank" class="cl-item">
-            <span style="color:var(--cyan)">GH</span> GitHub → pavankalyan-codes
+            <span style="color:var(--cyan)">GH</span> GitHub -> pavankalyan-codes
             <svg class="cl-arrow" width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
           </a>
           <a href="https://pavankalyan-codes.github.io/PavanKalyanC_Resume.pdf" target="_blank" class="cl-item">
-            <span style="color:var(--cyan)">CV</span> Résumé → Download PDF
+            <span style="color:var(--cyan)">CV</span> Resume -> Download PDF
             <svg class="cl-arrow" width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
           </a>
         </div>
@@ -987,7 +1031,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-l">© 2026 Pavan Kalyan Chelama — All rights reserved.</div>
+  <div class="footer-l">(c) 2026 Pavan Kalyan Chelama - All rights reserved.</div>
   <div class="footer-r">Crafted with <span>[ precision ]</span></div>
 </footer>
 
@@ -1005,11 +1049,11 @@
 
   // Terminal cycling commands
   const cmds = [
-    '<span class="t-prompt">❯ </span><span style="color:#e2e8f8">kubectl get pods --all-namespaces</span>',
-    '<span class="t-prompt">❯ </span><span style="color:#e2e8f8">dotnet run --project Api.csproj</span>',
-    '<span class="t-prompt">❯ </span><span style="color:#e2e8f8">az aks get-credentials --name prod-aks</span>',
-    '<span class="t-prompt">❯ </span><span style="color:#e2e8f8">docker build -t myapp:latest .</span>',
-    '<span class="t-prompt">❯ </span><span style="color:#e2e8f8">ng build --configuration production</span>',
+    '<span class="t-prompt">> </span><span style="color:#e2e8f8">kubectl get pods --all-namespaces</span>',
+    '<span class="t-prompt">> </span><span style="color:#e2e8f8">dotnet run --project Api.csproj</span>',
+    '<span class="t-prompt">> </span><span style="color:#e2e8f8">az aks get-credentials --name prod-aks</span>',
+    '<span class="t-prompt">> </span><span style="color:#e2e8f8">docker build -t myapp:latest .</span>',
+    '<span class="t-prompt">> </span><span style="color:#e2e8f8">ng build --configuration production</span>',
   ];
   let ci = 0;
   const cursorLine = document.getElementById('termCursorLine');
@@ -1032,7 +1076,7 @@
     const m = document.getElementById('f-msg').value.trim();
     if (!n || !e || !m) return;
     const btn = document.getElementById('fsubmit');
-    btn.textContent = '✓ Message Sent!';
+    btn.textContent = 'OK Message Sent!';
     btn.classList.add('sent');
     btn.disabled = true;
     setTimeout(() => {
@@ -1045,3 +1089,9 @@
 </script>
 </body>
 </html>
+
+
+
+
+
+
